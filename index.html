@@ -4,20 +4,61 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header>
+      <div class="headerLogo"> Header Logo</div>
+      <nav>
+        <ul>
+          <li>Nav</li>
+          <li>Nav</li>
+          <li>Nav</li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Home page</h1>
+
+
+      <!--OPPGave 1:
+      1. Lag et input-felt som tar imot fornavn
+      2. Lag et input-felt som tar imot etternavn
+      3. Lag et input-felt som tar imot alder
+      4. Lag et input-felt som tar imot en avkryssning
+      -->
+    <form class="flexCol">
+      <label class="flexCol" for="firstName">
+        skriv dit fornavn
+        <input class="inputSize" type="text" name="firstName" id="firstName" placeholder="eks. Ola/Kari">
+      </label>
+    
+
+      <label class="flexCol" for="lastName"></label>
+      skriv dit etternavn
+      <input class="inputSize" type="text" name="lastName" id="lastName" placeholder="eks. Nordmann">
+
+        <!-- OPPGAVE 2: 
+          1. Gi gvert input-element et label-element
+      -->
+      <label class="flexCol" for="age">
+        skriv inn din alder
+      <input class="inputSize" type="number" name="age"  id="age" placeholder="eks. 47">
+      </label>
+
+      <label class="flexCol" for="checkBox">
+        hak av her
+      <input class="inputSize" type="checkbox" name="checkBox" id="checkBox" >
+      </label>
+
+      <button class="buttonSize" id="submitButton"> Send inn skjema </button>
+    </form>
+      <!--<input type="button" name="" id="" > -->
     </main>
+
+   
+    <footer>
+      <p>Laget av ME</p>
+    </footer>
   </body>
 </html>
